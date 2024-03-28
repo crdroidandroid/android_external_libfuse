@@ -97,4 +97,7 @@ cc_library {
         "lib/mount.c",
         "lib/mount_util.c",
     ],
+
+    // Workaround LTO build breakage.
+    lto_O0: true,
 }
